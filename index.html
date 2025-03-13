@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav class="w-full h-16 bg-[#F0F0F0] flex justify-around items-center p-2 shadow-gray-300 shadow-md">
+        <div class="logo h-full">
+            <img class="h-12" src="https://deepthought.education/assets/images/logo/logo.svg" alt="deepthought">
+        </div>
+        <div class="icons flex gap-2">
+            <i class="material-icons p-1 text-white bg-blue-500 rounded-full">home</i>
+            <i class="material-icons p-1 text-white bg-blue-500 rounded-full">group</i>
+            <i class="material-icons p-1 text-white bg-blue-500 rounded-full">construction</i>
+            <i class="material-icons p-1 text-white bg-blue-500 rounded-full">notifications</i>
+            <i class="material-icons p-1 text-gray-500 bg-gray-500 rounded-full">radio_button_checked</i>
+            <i class="material-icons p-1 text-blue-500 rounded-full">more_vert</i>
+        </div>
+    </nav>
+
+    <div id="sidebar"
+        class="bg-white border-4 border-gray-200 text-black w-72 rounded-lg rounded-l-none absolute top-[4rem] left-0 h-[80vh] transition-all duration-300 z-50 overflow-hidden">
+        <div class="bg-black w-full h-10">
+            <button id="toggleButton"
+                class="mr-5 bg-white absolute top-[0.15rem] right-0 m-1 text-black font-bold rounded-full">
+                <i id="arrowIcon" class="material-icons text-sm font-bold px-1.5 my-1">arrow_forward</i>
+            </button>
+            <h2 class="sidebar-head font-semibold text-sm py-2 pl-4 mr-12 text-white bg-black">Journey Board</h2>
+        </div>
+        <div class="content mt-4 p-5">
+            <ul class="list-disc ml-5">
+                <li><a href="#" class="block hover:underline text-sm font-semibold mb-1 jb_title"></a></li>
+                <li class="jb"><a href="#" class="block hover:underline text-sm board_sub"></a></li>
+                <li class="jb"><a href="#" class="block hover:underline text-sm board_sub"></a></li>
+                <li class="jb"><a href="#" class="block hover:underline text-sm board_sub"></a></li>
+                <li class="jb"><a href="#" class="block hover:underline text-sm board_sub"></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="top mx-32 my-2">
+        <div class="title flex justify-between p-1">
+            <h1 class="text-[#0029FF] font-bold text-2xl">Technical Project Management</h1>
+            <button class="px-3 py-1 text-sm text-white rounded-2xl bg-[#0029FF]">Submit Task</button>
+        </div>
+        <div class="subtitle bg-[#F0F0F0] my-4 p-3 rounded-md">
+            <h2 class="font-bold text-lg task_title"></h2>
+            <p class="mt-2 task_description">
+            </p>
+        </div>
+    </div>
+
+    <div
+      id="notice" class="bg-white border-2 border-gray-200 text-black w-16 shadow-lg shadow-gray-200 rounded-lg rounded-r-none absolute top-[8rem] right-0 h-[42vh]">
+        <div class="bg-black h-full w-2/4 rounded-lg rounded-r-none flex flex-col">
+            <i id="closeIcon" class="material-icons cursor-pointer text-white font-semibold px-1 py-1">close</i>
+            <ol class="text-white text-sm pl-3 pr-2">
+                <li>N</li>
+                <li>o</li>
+                <li>t</li>
+                <li>i</li>
+                <li>c</li>
+                <li>e</li>
+                <li class="pt-2">B</li>
+                <li>o</li>
+                <li>a</li>
+                <li>r</li>
+                <li>d</li>
+            </ol>
+
+        </div>
+    </div>
+
+    <div class="assets my-6 mx-32 grid grid-cols-2 gap-6">
+
+    </div>
+
+    <div class="bottom-icons flex flex-col gap-2 fixed right-2 bottom-3">
+        <i
+            class="material-icons shadow-md shadow-gray-500 bg-[#0029ff] rounded-full py-2 px-3 font-bold text-white text-sm">question_mark</i>
+        <i
+            class="material-icons shadow-md shadow-gray-500 bg-[#0029ff] rounded-full py-2 px-3 font-bold text-white text-sm">groups_2</i>
+        <i
+            class="material-icons shadow-md shadow-gray-500 bg-[#0029ff] rounded-full py-2 px-3 font-bold text-white text-sm">calendar_month</i>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
